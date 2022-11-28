@@ -9,7 +9,12 @@ const mondayWork= function(task=`go to the office`)
 {
     return `This Monday, I will ${task}.`
 }
-function wrapAdjective(ussop)
-{   
-    
+let wrapAdjective=function(style=`*`){
+    return function(adjective=`hardworker`){
+        return `You are ${style}${adjective}${style}!`
+    }
+
 }
+
+
+    
